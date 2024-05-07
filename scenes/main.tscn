@@ -1,0 +1,179 @@
+[gd_scene load_steps=5 format=3 uid="uid://c1bj5yyqpqd86"]
+
+[ext_resource type="Script" path="res://scripts/main.gd" id="1_erjmk"]
+[ext_resource type="Texture2D" uid="uid://clbx1qp84f43n" path="res://art/bg.jpg" id="2_aux6e"]
+[ext_resource type="FontFile" uid="uid://ctpo1bhbtggct" path="res://art/gabarito/fonts/ttf/Gabarito-Bold.ttf" id="3_ka38n"]
+[ext_resource type="FontFile" uid="uid://28tk2yphobb6" path="res://art/AudioNugget.ttf" id="4_xn4il"]
+
+[node name="Main" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_left = -4.0
+offset_right = -4.0
+scale = Vector2(1.01, 1.01)
+script = ExtResource("1_erjmk")
+
+[node name="Bg" type="Sprite2D" parent="."]
+position = Vector2(638, 353)
+scale = Vector2(0.66875, 0.664815)
+texture = ExtResource("2_aux6e")
+
+[node name="describe" type="TextEdit" parent="."]
+layout_mode = 0
+offset_left = 33.0
+offset_top = 25.0
+offset_right = 1065.0
+offset_bottom = 89.0
+theme_override_colors/background_color = Color(0.160784, 0.141176, 0.0745098, 1)
+theme_override_colors/font_color = Color(0.92549, 0.933333, 0.882353, 1)
+theme_override_colors/font_placeholder_color = Color(0.972549, 0.878431, 0.631373, 1)
+theme_override_fonts/font = ExtResource("3_ka38n")
+theme_override_font_sizes/font_size = 36
+placeholder_text = "describe"
+scroll_smooth = true
+scroll_fit_content_height = true
+caret_blink = true
+
+[node name="process" type="TextEdit" parent="."]
+layout_mode = 0
+offset_left = 33.0
+offset_top = 121.0
+offset_right = 1065.0
+offset_bottom = 185.0
+theme_override_colors/background_color = Color(0.160784, 0.141176, 0.0745098, 1)
+theme_override_colors/font_color = Color(0.92549, 0.933333, 0.882353, 1)
+theme_override_colors/font_placeholder_color = Color(0.972549, 0.878431, 0.631373, 1)
+theme_override_fonts/font = ExtResource("3_ka38n")
+theme_override_font_sizes/font_size = 36
+placeholder_text = "process"
+
+[node name="evaluate" type="TextEdit" parent="."]
+layout_mode = 0
+offset_left = 33.0
+offset_top = 217.0
+offset_right = 1065.0
+offset_bottom = 281.0
+theme_override_colors/background_color = Color(0.160784, 0.141176, 0.0745098, 1)
+theme_override_colors/font_color = Color(0.92549, 0.933333, 0.882353, 1)
+theme_override_colors/font_placeholder_color = Color(0.972549, 0.878431, 0.631373, 1)
+theme_override_fonts/font = ExtResource("3_ka38n")
+theme_override_font_sizes/font_size = 36
+placeholder_text = "evaluate"
+
+[node name="analyze" type="TextEdit" parent="."]
+layout_mode = 0
+offset_left = 33.0
+offset_top = 317.0
+offset_right = 1065.0
+offset_bottom = 381.0
+theme_override_colors/background_color = Color(0.160784, 0.141176, 0.0745098, 1)
+theme_override_colors/font_color = Color(0.92549, 0.933333, 0.882353, 1)
+theme_override_colors/font_placeholder_color = Color(0.972549, 0.878431, 0.631373, 1)
+theme_override_fonts/font = ExtResource("3_ka38n")
+theme_override_font_sizes/font_size = 36
+placeholder_text = "analyze"
+
+[node name="conclude" type="TextEdit" parent="."]
+layout_mode = 0
+offset_left = 33.0
+offset_top = 417.0
+offset_right = 1065.0
+offset_bottom = 481.0
+theme_override_colors/background_color = Color(0.160784, 0.141176, 0.0745098, 1)
+theme_override_colors/font_color = Color(0.92549, 0.933333, 0.882353, 1)
+theme_override_colors/font_placeholder_color = Color(0.972549, 0.878431, 0.631373, 1)
+theme_override_fonts/font = ExtResource("3_ka38n")
+theme_override_font_sizes/font_size = 36
+placeholder_text = "conclude"
+
+[node name="plan" type="TextEdit" parent="."]
+layout_mode = 0
+offset_left = 33.0
+offset_top = 513.0
+offset_right = 1065.0
+offset_bottom = 577.0
+theme_override_colors/background_color = Color(0.160784, 0.141176, 0.0745098, 1)
+theme_override_colors/font_color = Color(0.92549, 0.933333, 0.882353, 1)
+theme_override_colors/font_placeholder_color = Color(0.972549, 0.878431, 0.631373, 1)
+theme_override_fonts/font = ExtResource("3_ka38n")
+theme_override_font_sizes/font_size = 36
+placeholder_text = "plan"
+
+[node name="shadow" type="RichTextLabel" parent="."]
+layout_mode = 0
+offset_left = 1266.0
+offset_top = 24.0007
+offset_right = 1971.0
+offset_bottom = 218.001
+rotation = 1.5708
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_fonts/normal_font = ExtResource("4_xn4il")
+theme_override_font_sizes/normal_font_size = 90
+text = "enjoyable
+journale"
+
+[node name="title" type="RichTextLabel" parent="."]
+layout_mode = 0
+offset_left = 1273.0
+offset_top = 24.0
+offset_right = 1978.0
+offset_bottom = 225.0
+rotation = 1.5708
+theme_override_colors/default_color = Color(1, 1, 0, 1)
+theme_override_fonts/normal_font = ExtResource("4_xn4il")
+theme_override_font_sizes/normal_font_size = 90
+text = "enjoyable
+journale"
+
+[node name="save" type="Button" parent="."]
+layout_mode = 0
+offset_left = 88.0
+offset_top = 600.0
+offset_right = 424.0
+offset_bottom = 688.0
+theme_override_colors/font_color = Color(1, 1, 0, 1)
+theme_override_fonts/font = ExtResource("4_xn4il")
+theme_override_font_sizes/font_size = 72
+text = "save"
+
+[node name="load" type="Button" parent="."]
+visible = false
+layout_mode = 0
+offset_left = 440.0
+offset_top = 602.0
+offset_right = 738.0
+offset_bottom = 679.0
+scale = Vector2(1.14818, 1.14818)
+theme_override_colors/font_color = Color(1, 1, 0, 1)
+theme_override_fonts/font = ExtResource("4_xn4il")
+theme_override_font_sizes/font_size = 48
+text = "load
+"
+
+[node name="selectFolder" type="FileDialog" parent="."]
+title = "Save Journal"
+initial_position = 2
+size = Vector2i(1280, 720)
+content_scale_aspect = 1
+access = 2
+
+[connection signal="focus_entered" from="describe" to="." method="_on_describe_focus_entered"]
+[connection signal="mouse_exited" from="describe" to="." method="_on_describe_mouse_exited"]
+[connection signal="focus_entered" from="process" to="." method="_on_process_focus_entered"]
+[connection signal="mouse_entered" from="process" to="." method="_on_process_mouse_entered"]
+[connection signal="mouse_exited" from="process" to="." method="_on_process_mouse_exited"]
+[connection signal="focus_entered" from="evaluate" to="." method="_on_evaluate_focus_entered"]
+[connection signal="mouse_entered" from="evaluate" to="." method="_on_evaluate_mouse_entered"]
+[connection signal="mouse_exited" from="evaluate" to="." method="_on_evaluate_mouse_exited"]
+[connection signal="focus_entered" from="analyze" to="." method="_on_analyze_focus_entered"]
+[connection signal="mouse_entered" from="analyze" to="." method="_on_analyze_mouse_entered"]
+[connection signal="mouse_exited" from="analyze" to="." method="_on_analyze_mouse_exited"]
+[connection signal="focus_entered" from="conclude" to="." method="_on_conclude_focus_entered"]
+[connection signal="mouse_entered" from="conclude" to="." method="_on_conclude_mouse_entered"]
+[connection signal="mouse_exited" from="conclude" to="." method="_on_conclude_mouse_exited"]
+[connection signal="focus_entered" from="plan" to="." method="_on_plan_focus_entered"]
+[connection signal="mouse_entered" from="plan" to="." method="_on_plan_mouse_entered"]
+[connection signal="mouse_exited" from="plan" to="." method="_on_plan_mouse_exited"]
+[connection signal="pressed" from="save" to="." method="_on_save_pressed"]
+[connection signal="pressed" from="load" to="." method="_on_load_pressed"]
+[connection signal="file_selected" from="selectFolder" to="." method="_on_select_folder_file_selected"]
